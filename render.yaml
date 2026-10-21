@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: pmjay-awaajsahayak
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .

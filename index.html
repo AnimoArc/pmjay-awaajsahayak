@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM-JAY AwaajSahayak | Voice-First Healthcare Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="emblem">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            <path d="M14 2c2.5 1 4.5 3 5.5 5.5"/>
+            <path d="M14 6a6 6 0 0 1 3 3"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-title">
+            <span class="brand-main">PM-JAY AwaajSahayak</span>
+            <span class="brand-badge">आवाज़ सहायक</span>
+          </div>
+          <p class="brand-subtitle">Zero-Data, Voice-Guided Healthcare Entitlements for Aspirational Districts</p>
+        </div>
+      </div>
+      <div class="toll-free-pill">
+        <span class="pulse-dot"></span>
+        <div class="pill-text">
+          <small>Toll-Free Missed Call Number</small>
+          <strong>1800-111-5688</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <button class="nav-tab active" data-tab="simulator">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        Feature Phone Simulator
+      </button>
+      <button class="nav-tab" data-tab="asha-desk">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+        Village / ASHA Desk
+      </button>
+      <button class="nav-tab" data-tab="survey-data">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Field Survey & Ground Insights
+      </button>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <section id="tab-simulator" class="tab-pane active">
+      <div class="pane-grid">
+        <div class="phone-column">
+          <div class="phone-case">
+            <div class="speaker-grill"></div>
+            <div class="phone-screen-frame">
+              <div class="screen-top-bar">
+                <span class="signal-indicator">
+                  <span class="bar b1"></span>
+                  <span class="bar b2"></span>
+                  <span class="bar b3"></span>
+                  <span class="bar b4"></span>
+                </span>
+                <span class="operator-tag" id="screen-operator">PM-JAY SEVA</span>
+                <span class="battery-indicator">88%</span>
+              </div>
+              <div class="screen-display" id="screen-display">
+                <div class="idle-view" id="view-idle">
+                  <div class="screen-time" id="screen-clock">12:30 PM</div>
+                  <div class="screen-avatar">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div class="screen-notice" id="idle-prompt-text">
+                    Give Missed Call to<br>
+                    <strong>1800-111-5688</strong>
+                  </div>
+                  <div class="caller-id-badge">Caller: <span id="display-caller-phone">9876543210</span></div>
+                </div>
+
+                <div class="calling-view hidden" id="view-calling">
+                  <div class="spinner-ring"></div>
+                  <div class="calling-status" id="calling-status-text">Dialing 1800-111-5688...</div>
+                  <div class="calling-sub">Disconnecting to record missed call</div>
+                </div>
+
+                <div class="incoming-view hidden" id="view-incoming">
+                  <div class="ringing-bell">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                  </div>
+                  <div class="incoming-label">INCOMING CALLBACK</div>
+                  <div class="incoming-caller">PM-JAY AwaajSahayak</div>
+                  <div class="incoming-sub">Toll-Free Health Guidance</div>
+                  <div class="answer-cue">Press Green [CALL] to Answer</div>
+                </div>
+
+                <div class="active-call-view hidden" id="view-active-call">
+                  <div class="call-header">
+                    <span class="call-live-pill"><span class="red-dot"></span> LIVE</span>
+                    <span class="call-timer" id="call-timer">00:00</span>
+                  </div>
+                  <div class="voice-wave-container">
+                    <span class="v-wave"></span>
+                    <span class="v-wave"></span>
+                    <span class="v-wave"></span>
+                    <span class="v-wave"></span>
+                    <span class="v-wave"></span>
+                  </div>
+                  <div class="voice-transcription-box" id="ivr-transcript">
+                    Connecting to voice assistant...
+                  </div>
+                  <div class="keypad-helper-tag" id="keypad-prompt-helper">
+                    Press keys 1, 2, 3 or 0 on keypad
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="keypad-actions">
+              <button class="key-btn key-call" id="btn-call-action" title="Dial / Answer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.27 1.11z"/>
+                </svg>
+                <span>CALL</span>
+              </button>
+              <button class="key-btn key-nav" id="btn-menu-action">
+                <span>SELECT</span>
+              </button>
+              <button class="key-btn key-end" id="btn-hangup-action" title="End Call">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 9c-1.6 0-3.15.25-4.6.72v3.1c0 .39-.23.74-.58.9A15.4 15.4 0 012 15.1a1 1 0 01-1-1v-4a1 1 0 01.78-.98C5.58 8.28 8.67 7.7 12 7.7s6.42.58 10.22 1.42A1 1 0 0123 10.1v4a1 1 0 01-1 1c-1.6 0-3.15-.46-4.82-1.38a1 1 0 01-.58-.9v-3.1C15.15 9.25 13.6 9 12 9z"/>
+                </svg>
+                <span>END</span>
+              </button>
+            </div>
+
+            <div class="keypad-grid">
+              <button class="num-key" data-key="1"><span class="k-num">1</span><span class="k-sub">Eligibility</span></button>
+              <button class="num-key" data-key="2"><span class="k-num">2</span><span class="k-sub">Hospitals</span></button>
+              <button class="num-key" data-key="3"><span class="k-num">3</span><span class="k-sub">Claims</span></button>
+              <button class="num-key" data-key="4"><span class="k-num">4</span><span class="k-sub">GHI</span></button>
+              <button class="num-key" data-key="5"><span class="k-num">5</span><span class="k-sub">JKL</span></button>
+              <button class="num-key" data-key="6"><span class="k-num">6</span><span class="k-sub">MNO</span></button>
+              <button class="num-key" data-key="7"><span class="k-num">7</span><span class="k-sub">PQRS</span></button>
+              <button class="num-key" data-key="8"><span class="k-num">8</span><span class="k-sub">TUV</span></button>
+              <button class="num-key" data-key="9"><span class="k-num">9</span><span class="k-sub">WXYZ</span></button>
+              <button class="num-key" data-key="*"><span class="k-num">*</span><span class="k-sub">Back</span></button>
+              <button class="num-key" data-key="0"><span class="k-num">0</span><span class="k-sub">Repeat</span></button>
+              <button class="num-key" data-key="#"><span class="k-num">#</span><span class="k-sub">Help</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls-column">
+          <div class="card intro-card">
+            <h3>Try the Beneficiary Flow</h3>
+            <p>Simulate how a villager with a basic feature phone accesses their ₹5 Lakh Ayushman Bharat entitlement without internet, apps, or reading skill.</p>
+            <div class="step-guide">
+              <div class="step-item">
+                <span class="step-bubble">1</span>
+                <div>
+                  <strong>Select Beneficiary Persona</strong>
+                  <p>Choose an aspirational district resident profile to simulate their registered number and regional language.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span class="step-bubble">2</span>
+                <div>
+                  <strong>Trigger Missed Call</strong>
+                  <p>Click "Give Missed Call" or press the Green button. The line disconnects after one ring at zero expense.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span class="step-bubble">3</span>
+                <div>
+                  <strong>Receive Instant Voice Callback</strong>
+                  <p>Within seconds, an automated callback rings with natural voice instructions in your chosen regional language.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card settings-card">
+            <h3>Simulator Configuration</h3>
+            <div class="form-group">
+              <label for="persona-select">Select Test Beneficiary:</label>
+              <select id="persona-select" class="form-select">
+                <option value="ramesh">Ramesh Kumar (Bahraich, UP) - Hindi - Active Beneficiary</option>
+                <option value="sunita">Sunita Bai (Barwani, MP) - Hindi - Card Needs Renewal</option>
+                <option value="marathi_kisan">Ganesh Patil (Gadchiroli, MH) - Marathi - Active Beneficiary</option>
+                <option value="unregistered">New Caller (Unregistered Number - Prompts Aadhaar / Ration No.)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="language-select">Spoken Language Preference:</label>
+              <div class="lang-pills">
+                <button class="lang-pill active" data-lang="hi-IN" id="pill-hi">हिन्दी (Hindi)</button>
+                <button class="lang-pill" data-lang="mr-IN" id="pill-mr">मराठी (Marathi)</button>
+                <button class="lang-pill" data-lang="en-IN" id="pill-en">English</button>
+              </div>
+            </div>
+
+            <div class="action-buttons-group">
+              <button class="btn btn-primary" id="btn-trigger-missed-call">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Give Free Missed Call Now
+              </button>
+              <button class="btn btn-secondary" id="btn-toggle-audio-mute">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="mute-icon"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                <span id="mute-label">Audio Enabled (Web Speech)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-asha-desk" class="tab-pane">
+      <div class="desk-container">
+        <div class="desk-intro">
+          <h2>ASHA / Village Kiosk Assistance Desk</h2>
+          <p>Designed for ground health workers and Panchayat kiosks to verify entitlements, look up nearby cashless hospitals, and read instructions out loud to beneficiaries.</p>
+        </div>
+
+        <div class="search-box-card">
+          <div class="search-input-wrapper">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" id="desk-search-input" placeholder="Enter 10-digit Mobile Number, Ration Card No, or ABHA ID..." value="9876543210">
+            <button class="btn btn-primary" id="btn-desk-search">Search Beneficiary</button>
+          </div>
+          <div class="quick-chips">
+            <span class="chip-label">Quick Test Profiles:</span>
+            <button class="chip" data-num="9876543210">9876543210 (Ramesh - UP)</button>
+            <button class="chip" data-num="8765432109">8765432109 (Sunita - MP)</button>
+            <button class="chip" data-num="9422012345">9422012345 (Ganesh - MH)</button>
+          </div>
+        </div>
+
+        <div id="desk-result-container" class="desk-result-card">
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-survey-data" class="tab-pane">
+      <div class="survey-page-container">
+        <div class="survey-intro-card">
+          <div class="survey-intro-header">
+            <div>
+              <h2>Ground Survey & Beneficiary Research</h2>
+              <p>Field survey data collected directly from households validating Problem Statement 3: the urgent need for voice-based, local-language navigation of PM-JAY entitlements.</p>
+            </div>
+            <a href="survey_data.csv" download="survey_data.csv" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Raw CSV
+            </a>
+          </div>
+
+          <div class="survey-metrics-grid">
+            <div class="survey-metric-box">
+              <span class="sm-value" style="color: #16a34a;">80%</span>
+              <span class="sm-label">Willingness to Use Voice Tool</span>
+              <span class="sm-desc">8 of 10 respondents expressed strong readiness for voice/image-based claims guidance.</span>
+            </div>
+            <div class="survey-metric-box">
+              <span class="sm-value" style="color: #dc2626;">70%</span>
+              <span class="sm-label">Lack Family Eligibility Awareness</span>
+              <span class="sm-desc">70% do not know if their family qualifies for the ₹5 Lakh Ayushman cover.</span>
+            </div>
+            <div class="survey-metric-box">
+              <span class="sm-value" style="color: #ea580c;">2.9 / 5</span>
+              <span class="sm-label">Average Form Understanding</span>
+              <span class="sm-desc">Hospital forms and admission procedures are rated as difficult to comprehend.</span>
+            </div>
+            <div class="survey-metric-box">
+              <span class="sm-value" style="color: #2563eb;">#1 Trusted</span>
+              <span class="sm-label">Local Clinics & ASHA Workers</span>
+              <span class="sm-desc">Direct human or voice touchpoints are trusted over complex digital portals.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="voice-quotes-card">
+          <h3>Direct Feedback from Beneficiaries (Voice of the Community)</h3>
+          <div class="quotes-grid">
+            <div class="quote-card">
+              <div class="quote-text">"Provide information in simple local languages and make the claims process simple and easy to understand."</div>
+              <div class="quote-author">— Secondary School Beneficiary (Hindi, 31-45 yrs)</div>
+            </div>
+            <div class="quote-card">
+              <div class="quote-text">"Health companies scamming, putting unreal conditions in the claims behind themselves."</div>
+              <div class="quote-author">— Youth Beneficiary facing complex claim paperwork</div>
+            </div>
+            <div class="quote-card">
+              <div class="quote-text">"Lack of awareness about the scheme and the claims process."</div>
+              <div class="quote-author">— Family Head with 7+ Household Members</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-card-header">
+            <h3>Survey Responses Dataset (10 Field Submissions)</h3>
+            <span class="records-counter" id="survey-count-pill">10 Responses Loaded</span>
+          </div>
+          <div class="table-responsive">
+            <table class="survey-data-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Age Group</th>
+                  <th>Education</th>
+                  <th>Preferred Language</th>
+                  <th>Household</th>
+                  <th>Heard of PM-JAY?</th>
+                  <th>Knows Eligibility?</th>
+                  <th>Phone Type</th>
+                  <th>Connectivity</th>
+                  <th>Willing for Voice Tool?</th>
+                  <th>Biggest Challenge</th>
+                  <th>Suggestion</th>
+                </tr>
+              </thead>
+              <tbody id="survey-tbody">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-container">
+      <p>PM-JAY AwaajSahayak • Built for NITI Aayog Aspirational Districts Initiative • Problem Statement 3</p>
+      <p class="footer-sub">Voice-first, Zero-data, Low-literacy solution for Ayushman Bharat PM-JAY entitlement navigation.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
