@@ -516,6 +516,14 @@ function triggerMissedCallSequence() {
   document.getElementById("calling-status-text").textContent = "Dialing 1800-111-5688...";
   playTone(440, 200);
 
+  try {
+    fetch("/api/missed-call", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone: currentCallerPhone, lang: currentLanguage })
+    }).catch(() => {});
+  } catch (e) {}
+
   missedCallTimeout = setTimeout(() => {
     document.getElementById("calling-status-text").textContent = "Missed Call Registered!";
     playTone(320, 300);
